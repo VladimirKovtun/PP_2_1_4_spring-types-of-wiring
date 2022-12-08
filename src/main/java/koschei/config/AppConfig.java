@@ -1,5 +1,6 @@
 package koschei.config;
 
+import koschei.models.Deth8;
 import koschei.models.Egg6;
 import koschei.models.Island2;
 import koschei.models.Wood3;
@@ -16,8 +17,12 @@ public class AppConfig {
         return new Island2(wood);
     }
 
-    @Bean()
+    @Bean
     public static Egg6 getEgg() {
         return new Egg6();
+    }
+    @Bean
+    public static Deth8 getDeath() {
+        return new Deth8();
     }
 }
